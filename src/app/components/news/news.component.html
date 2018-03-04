@@ -1,0 +1,45 @@
+<h2 id = {{id}}>This is news component</h2>
+<h2 [id] = "id">This is news component</h2>
+
+
+{{hNewInfor}} 
+<br>
+
+<div [innerHTML] = "hNewInfor"></div>
+<br>
+
+<!-- object -->
+{{obj.name}}
+
+<br>
+<!-- loop data-->
+<ul>
+    <li *ngFor = "let item of list">
+        {{item}}
+    </li>
+</ul>
+
+
+<ul>
+    <li *ngFor = "let item of list; let i = index">
+        {{item}} ---{{i + 1}}
+    </li>
+</ul>
+
+<ul>
+    <li *ngFor = "let item of list1; let key = index">
+        {{item.title}} ---{{key + 1}}
+    </li>
+</ul>
+
+<ul>
+    <li *ngFor = "let item of brand; let i = index">
+        {{item.cate}} ---{{i}}
+
+        <ol>
+            <li *ngFor = "let car of item.list">
+                {{car.title}}
+            </li>
+        </ol>
+    </li>
+</ul>
