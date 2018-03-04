@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  title = "this is title data from header component";
+  title = "this is title date from header component";
 
   msg : any;
 
